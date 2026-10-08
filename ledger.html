@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Submission ledger — Proust Fragrances concept</title>
+<meta name="description" content="Every capture recorded by the Proust Fragrances concept build, with timestamps, delivery state and CSV export.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#f5f0e6">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; connect-src 'self' https:; font-src 'self'; base-uri 'none'; object-src 'none'">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/chrome.css">
+<link rel="stylesheet" href="css/motion.css">
+<script>document.documentElement.className = 'js';</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
+<div id="system-status" class="system-status" aria-live="polite"></div>
+
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a class="nav__brand" href="index.html">
+      <img src="assets/proust-logo.svg" alt="Proust Fragrances" width="150" height="44" decoding="async">
+    </a>
+    <nav class="nav__links" aria-label="Sections">
+      <a href="index.html#machine">The ten</a>
+      <a href="index.html#blotter">Blotter</a>
+      <a href="index.html#collection">Collection</a>
+    </nav>
+    <div class="nav__right">
+      <a class="btn btn--sm btn--ghost" href="index.html">Back to the site</a>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="wrap ledger-main" data-ledger>
+  <p class="eyebrow">Ledger</p>
+  <h1 class="h2">Every submission this build has recorded.</h1>
+  <p class="lede">
+    Records are written to this browser's storage the moment a form is submitted — before any
+    confirmation is shown — and relayed to the collection endpoint if one is configured. Nothing
+    here is a mock: if it is not in this table, it was not recorded.
+  </p>
+
+  <div class="ledger-actions">
+    <button class="btn" type="button" data-export>Download CSV</button>
+    <button class="btn btn--ghost" type="button" data-retry disabled>Retry outbox</button>
+    <button class="btn btn--ghost" type="button" data-refresh>Refresh</button>
+    <button class="btn btn--ghost" type="button" data-clear>Clear this device</button>
+  </div>
+
+  <p class="ledger-note" data-ledger-status aria-live="polite">Loading records…</p>
+
+  <dl class="ledger-stats" data-stats></dl>
+
+  <div class="ledger-filters" role="group" aria-label="Filter records">
+    <span class="filter-row__label">Show</span>
+    <button class="chip" type="button" data-ledger-filter="" aria-pressed="true">Everything</button>
+    <button class="chip" type="button" data-ledger-filter="scent-quiz" aria-pressed="false">Quiz results</button>
+    <button class="chip" type="button" data-ledger-filter="newsletter" aria-pressed="false">Newsletter</button>
+    <button class="chip" type="button" data-ledger-filter="undelivered" aria-pressed="false">Not relayed</button>
+  </div>
+
+  <section class="ledger-section">
+    <h2>Records</h2>
+    <div class="table-wrap" data-table-wrap>
+      <table class="ledger">
+        <caption class="sr-only">Captured submissions</caption>
+        <thead>
+          <tr>
+            <th scope="col">Recorded at (UTC)</th>
+            <th scope="col">Source</th>
+            <th scope="col">Recommendation</th>
+            <th scope="col">Email</th>
+            <th scope="col">Answers</th>
+            <th scope="col">Delivery</th>
+            <th scope="col">Reference</th>
+          </tr>
+        </thead>
+        <tbody data-rows></tbody>
+      </table>
+    </div>
+    <p class="empty-state" data-empty hidden>Nothing has been recorded on this device yet. Submit the quiz on the main page and it appears here with a timestamp.</p>
+  </section>
+
+  <section class="ledger-section">
+    <h2>Activity log</h2>
+    <p class="ledger-note">Boot, storage, relay and failure events, newest first. Script errors land here because nothing on this build is allowed to fail silently.</p>
+    <div class="log" data-events aria-live="polite"></div>
+  </section>
+
+  <section class="ledger-section">
+    <h2>How this works</h2>
+    <div class="table-wrap">
+      <table class="ledger">
+        <thead><tr><th scope="col">Step</th><th scope="col">What happens</th><th scope="col">What the visitor sees</th></tr></thead>
+        <tbody>
+          <tr><td>1 · Submit</td><td>The browser validates the email and requires all three answers.</td><td>An inline message naming what is missing; focus moves to it.</td></tr>
+          <tr><td>2 · Write</td><td>The record is written to IndexedDB with a UUID and an ISO timestamp.</td><td>“Writing the record…” and the submit button is disabled.</td></tr>
+          <tr><td>3 · Confirm</td><td>Only after the write resolves is the record shown as stored.</td><td>The recommendation card plus a receipt with the reference and timestamp.</td></tr>
+          <tr><td>4 · Relay</td><td>Optional POST to <code>meta.captureEndpoint</code> in content.json.</td><td>“Recorded and sent.” or “Saved, but not relayed” with the endpoint's error.</td></tr>
+          <tr><td>5 · Fail</td><td>A blocked or full store throws; the record is not claimed.</td><td>“Could not save that” with the reason and advice; an error row is logged below.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<script type="module" src="js/ledger.js"></script>
+</body>
+</html>

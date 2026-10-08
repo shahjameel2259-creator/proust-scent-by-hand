@@ -1,0 +1,67 @@
+/* ============================================================
+   Proust Fragrances — Scent, By Hand
+   tokens.css — the whole design system lives here.
+   Change a value here and it changes everywhere on the site.
+   (Split out of site.css so the palette can be edited on its own.)
+   ============================================================ */
+
+:root {
+  /* ---- base: taken from the real product label ---- */
+  --paper: #f5f0e6;
+  --paper-2: #fbf8f1;
+  --paper-3: #efe8da;
+  --ink: #14100c;
+  --ink-70: #4a423a;
+  --ink-55: #6b6259;
+  --brand-brown: #9c5b2e;
+  --label-gold: #c9a063;
+  --rule: rgba(20, 16, 12, 0.14);
+  --rule-strong: rgba(20, 16, 12, 0.3);
+  --shadow-hard: 6px 6px 0 rgba(20, 16, 12, 0.1);
+
+  /* ---- the burst. Overridden per composition. ---- */
+  --burst: #e0361f;
+  --burst-ink: #f5f0e6;
+
+  /* ---- type ---- */
+  --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-hand: "Caveat", "Segoe Script", cursive;
+
+  --step--1: clamp(0.8125rem, 0.79rem + 0.11vw, 0.875rem);
+  --step-0: clamp(0.9375rem, 0.91rem + 0.13vw, 1rem);
+  --step-1: clamp(1.0625rem, 1.02rem + 0.2vw, 1.125rem);
+  --step-2: clamp(1.25rem, 1.16rem + 0.42vw, 1.5rem);
+  --step-3: clamp(1.75rem, 1.55rem + 1vw, 2.25rem);
+  --step-4: clamp(2.25rem, 1.85rem + 2vw, 3.25rem);
+  --step-5: clamp(3rem, 2.2rem + 4vw, 4.5rem);
+  --step-6: clamp(3.75rem, 2.2rem + 7.5vw, 7rem);
+  --step-7: clamp(4.5rem, 1.5rem + 15vw, 11rem);
+
+  /* ---- space ---- */
+  --gutter: clamp(16px, 2vw, 22px);
+  --page-x: clamp(18px, 4vw, 68px);
+  --section-y: clamp(72px, 11vw, 168px);
+  --maxw: 1320px;
+
+  /* ---- motion ---- */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-flood: cubic-bezier(0.16, 0.84, 0.3, 1);
+  --t-micro: 180ms;
+  --t-reveal: 620ms;
+  --t-flood: 620ms;
+}
+
+/* The ten bursts. Each composition owns exactly one.
+   --burst-ink is the type colour on that burst, picked by measured contrast:
+   light bursts take ink, dark bursts take paper. Every pair clears 4.5:1. */
+[data-burst="musky-oud"] { --burst: #c9341b; }
+[data-burst="hennessey-smoke"] { --burst: #1e3ce0; }
+[data-burst="white-oud"] { --burst: #ff3d7f; --burst-ink: #14100c; }
+[data-burst="gris-dust"] { --burst: #8f7bff; --burst-ink: #14100c; }
+[data-burst="vanilla-velvet"] { --burst: #f2c300; --burst-ink: #14100c; }
+[data-burst="harvest"] { --burst: #ff7a1a; --burst-ink: #14100c; }
+[data-burst="amalfi-coast"] { --burst: #00b89c; --burst-ink: #14100c; }
+[data-burst="billion-air"] { --burst: #2fd35a; --burst-ink: #14100c; }
+[data-burst="beyond-amber"] { --burst: #d6006e; }
+[data-burst="berry-bark"] { --burst: #7a2e8e; }

@@ -1,0 +1,111 @@
+/* ============================================================
+   motion.css — reveals, keyframes, reduced motion.
+   Rule: nothing is hidden unless JS is running. If the script
+   fails, every section stays visible and readable.
+   ============================================================ */
+
+@keyframes draw { to { stroke-dashoffset: 0; } }
+
+@keyframes cue {
+  0%   { transform: translateX(-100%); }
+  55%  { transform: translateX(0); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes stain-in {
+  from { opacity: 0; transform: scale(0.4) rotate(-6deg); }
+  to   { opacity: 0.42; transform: scale(1) rotate(0deg); }
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: none; }
+}
+
+@keyframes wipe-in {
+  from { clip-path: inset(0 0 100% 0); }
+  to   { clip-path: inset(0 0 0 0); }
+}
+
+/* ---- reveals: only armed when JS booted ---- */
+.js [data-reveal] {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity var(--t-reveal) var(--ease-out),
+              transform var(--t-reveal) var(--ease-out);
+  transition-delay: calc(var(--i, 0) * 70ms);
+}
+.js [data-reveal].is-in { opacity: 1; transform: none; }
+
+.js [data-wipe] { clip-path: inset(0 0 100% 0); }
+.js [data-wipe].is-in { animation: wipe-in 720ms var(--ease-out) forwards; }
+
+.js [data-stagger] > * {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 520ms var(--ease-out), transform 520ms var(--ease-out);
+  transition-delay: calc(var(--i, 0) * 55ms);
+}
+.js [data-stagger].is-in > * { opacity: 1; transform: none; }
+
+/* hero entrance (runs once, on load) */
+.js .hero .hero__kicker { animation: rise 620ms var(--ease-out) both; }
+.js .hero .display { animation: rise 760ms var(--ease-out) 80ms both; }
+.js .hero .hero__lede { animation: rise 720ms var(--ease-out) 220ms both; }
+.js .hero .hero__actions { animation: rise 700ms var(--ease-out) 340ms both; }
+.js .hero .hero__stage { animation: rise 900ms var(--ease-out) 180ms both; }
+.js .hero .hero__facts { animation: rise 700ms var(--ease-out) 460ms both; }
+
+/* the flood number stamp */
+.flood-num {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-variation-settings: "opsz" 144, "SOFT" 20, "WONK" 1;
+  font-size: var(--step-7);
+  line-height: 0.8;
+  color: color-mix(in srgb, var(--burst-ink) 22%, transparent);
+  position: absolute;
+  right: clamp(var(--page-x), 3vw, 40px);
+  top: clamp(24px, 3vw, 44px);
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* ============================================================
+   reduced motion — a real mode, not a downgrade
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+
+  .js [data-reveal],
+  .js [data-stagger] > * { opacity: 1; transform: none; }
+
+  .js [data-wipe] { clip-path: none; }
+
+  .js .hero .hero__kicker,
+  .js .hero .display,
+  .js .hero .hero__lede,
+  .js .hero .hero__actions,
+  .js .hero .hero__stage,
+  .js .hero .hero__facts { animation: none; }
+
+  .ink-rule path { stroke-dashoffset: 0; }
+  .hero__accent::after { transform: scaleX(1); }
+  .machine__flood { transition: none; }
+  .hero__bottle { rotate: -3.5deg; }
+  .machine__card,
+  .house__shot:nth-child(2),
+  .house__shot:nth-child(3) { rotate: 0deg; }
+  .scroll-cue i::after { animation: none; transform: none; }
+  .grain { opacity: 0.4; }
+}

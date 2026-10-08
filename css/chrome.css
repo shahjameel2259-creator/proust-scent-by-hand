@@ -1,0 +1,53 @@
+/* ============================================================
+   chrome.css — navigation, system status, toasts, ledger page.
+   ============================================================ */
+
+.nav {
+  position: sticky; top: 0; z-index: 80;
+  background: color-mix(in srgb, var(--paper) 94%, transparent);
+  border-bottom: 1.5px solid var(--rule);
+}
+.nav__inner { display: flex; align-items: center; justify-content: space-between; gap: 18px; min-height: 66px; }
+.nav__brand img { width: 152px; height: auto; display: block; }
+.nav__links { display: flex; gap: 22px; font-size: var(--step--1); }
+.nav__links a { text-decoration: none; border-bottom: 2px solid transparent; padding-bottom: 2px; transition: border-color var(--t-micro) linear; }
+.nav__links a:hover { border-bottom-color: var(--burst); }
+.nav__right { display: flex; align-items: center; gap: 14px; }
+.nav__ledger { font-size: var(--step--1); text-decoration: none; }
+.nav__ledger::after { content: "↗"; margin-left: 4px; font-size: 0.85em; }
+
+@media (max-width: 900px) {
+  .nav__links { display: none; }
+  .nav__brand img { width: 124px; }
+}
+
+/* ---- status area: errors and confirmations the visitor must see ---- */
+.system-status {
+  position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 120;
+  display: grid; gap: 10px; max-width: 560px; pointer-events: none;
+}
+.system-status > * { pointer-events: auto; box-shadow: 0 8px 24px rgba(20, 16, 12, 0.18); background: var(--paper-2); }
+.status-item { display: grid; gap: 8px; }
+.status-item__close { align-self: start; }
+.status-item__head { display: flex; justify-content: space-between; gap: 12px; align-items: start; }
+.status-item h4 { font-size: var(--step-0); font-weight: 700; }
+.status-item p { font-size: var(--step-0); color: var(--ink-70); }
+
+.loading-state { padding-block: 18vh 14vh; display: grid; gap: 10px; }
+.skeleton-note { font-size: var(--step--1); color: var(--ink-55); }
+.skeleton-row { height: 14px; background: linear-gradient(90deg, var(--paper-3), var(--paper-2), var(--paper-3)); background-size: 200% 100%; animation: shimmer 1.4s linear infinite; }
+@keyframes shimmer { from { background-position: 200% 0; } to { background-position: -200% 0; } }
+
+/* ---- ledger page ---- */
+.ledger-main { padding-block: clamp(32px, 5vw, 60px) clamp(56px, 8vw, 96px); display: grid; gap: 26px; }
+.ledger-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.ledger-section { display: grid; gap: 14px; }
+.ledger-section h2 { font-family: var(--font-display); font-weight: 600; font-size: var(--step-3); }
+.ledger-note { font-size: var(--step--1); color: var(--ink-55); max-width: 70ch; }
+.ledger-filters { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.kv { display: grid; grid-template-columns: max-content 1fr; gap: 4px 14px; font-size: var(--step--1); }
+.kv dt { color: var(--ink-55); }
+.kv dd { margin: 0; }
+details.record { border-bottom: 1px solid var(--rule); padding: 8px 0; }
+details.record summary { cursor: pointer; font-size: var(--step-0); }
+details.record pre { margin: 8px 0 0; background: var(--paper-3); padding: 10px; overflow: auto; font-size: 0.75rem; }

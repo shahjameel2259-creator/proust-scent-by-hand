@@ -1,0 +1,386 @@
+{
+  "meta": {
+    "title": "Proust Fragrances — Scent, By Hand",
+    "brand": "Proust Fragrances",
+    "description": "An unofficial concept for Proust Fragrances, Hyderabad: ten compositions of oud, smoke and citrus, printed on paper instead of lit in gold.",
+    "lang": "en",
+    "accentBurst": "#C9341B",
+    "captureEndpoint": "",
+    "currency": "₹",
+    "disclaimer": "Unofficial concept. Not affiliated with, endorsed by or connected to Proust Fragrances. Nothing can be bought here.",
+    "contactEmail": "contact@proustfragrances.com",
+    "contactPlace": "Perfume bar · Bhavan Road, Somajiguda, Hyderabad 500082",
+    "social": [{ "label": "Instagram", "href": "https://www.instagram.com/proust.fragrances/" }],
+    "priceNote": "100 ml ₹1,600 · 50 ml ₹1,300 · 11 ml roll-on ₹800"
+  },
+
+  "data": {
+    "scents": [
+      {
+        "slug": "musky-oud",
+        "name": "Musky Oud",
+        "burst": "#C9341B",
+        "img": "assets/musky-oud-01.webp",
+        "imgAlt": "Musky Oud, 100 ml eau de parfum, photographed on white",
+        "notes": ["Oud", "Musk", "Leather", "Patchouli", "Amber"],
+        "character": "The evening one",
+        "story": "Oud, musk, warm leather, patchouli and amber. It opens dry and resinous and then sits close to the skin for hours. The house's best seller, and the one that makes the least sense on a website — you have to smell it.",
+        "wear": "9+ hours",
+        "bestSeller": true
+      },
+      {
+        "slug": "hennessey-smoke",
+        "name": "Hennessey Smoke",
+        "burst": "#1E3CE0",
+        "img": "assets/hennessey-smoke-01.webp",
+        "imgAlt": "Hennessey Smoke, 100 ml eau de parfum, photographed on white",
+        "notes": ["Smoke", "Spice", "Wood", "Leather"],
+        "character": "The confident one",
+        "story": "Smoke, spice, wood and leather, built for people who like a room to know they arrived. It is the most assertive thing in the ten, and the one people either love immediately or never.",
+        "wear": "9+ hours",
+        "bestSeller": false
+      },
+      {
+        "slug": "white-oud",
+        "name": "White Oud in Rose Garden",
+        "burst": "#FF3D7F",
+        "img": "assets/white-oud-01.webp",
+        "imgAlt": "White Oud in Rose Garden, 100 ml eau de parfum, photographed on white",
+        "notes": ["White oud", "Rose", "Resin"],
+        "character": "The royal one",
+        "story": "White oud against rose, with the oud acting as a natural fixative so the florals stay on the skin instead of vanishing in an hour. Marketed unisex, and genuinely is — it reads soft on one person and commanding on the next.",
+        "wear": "9+ hours",
+        "bestSeller": false
+      },
+      {
+        "slug": "gris-dust",
+        "name": "Gris Dust",
+        "burst": "#8F7BFF",
+        "img": "assets/gris-dust-01.webp",
+        "imgAlt": "Gris Dust, 100 ml eau de parfum, photographed on white",
+        "notes": ["Powder", "Amber", "Musk"],
+        "character": "The quiet one",
+        "story": "Powdery, ambery, a little old-fashioned in the best way. Gris Dust does not announce itself; it settles into knitwear and stays there. The sleeper in the range.",
+        "wear": "9+ hours",
+        "bestSeller": false
+      },
+      {
+        "slug": "vanilla-velvet",
+        "name": "Vanilla Velvet",
+        "burst": "#F2C300",
+        "img": "assets/vanilla-velvet-01.webp",
+        "imgAlt": "Vanilla Velvet, 100 ml eau de parfum, photographed on white",
+        "notes": ["Vanilla", "Cinnamon", "Cocoa"],
+        "character": "The warm one",
+        "story": "Vanilla with cinnamon and cocoa, heating up as it dries down. Sweet, but not a dessert — the spice keeps it adult. Their most gifted bottle, and the one most likely to be shared.",
+        "wear": "9+ hours",
+        "bestSeller": false
+      },
+      {
+        "slug": "harvest",
+        "name": "Harvest Under Winter Sun",
+        "burst": "#FF7A1A",
+        "img": "assets/harvest-01.webp",
+        "imgAlt": "Harvest Under Winter Sun, 100 ml eau de parfum, photographed on white",
+        "notes": ["Juicy fruits", "Delicate florals"],
+        "character": "The bright one",
+        "story": "Juicy fruit over delicate florals, made for the two months a year when Hyderabad is actually cold. Light enough for daytime, warm enough that it does not disappear.",
+        "wear": "8+ hours",
+        "bestSeller": false
+      },
+      {
+        "slug": "amalfi-coast",
+        "name": "Amalfi Coast",
+        "burst": "#00B89C",
+        "img": "assets/amalfi-coast-01.webp",
+        "imgAlt": "Amalfi Coast, 100 ml eau de parfum, photographed on white",
+        "notes": ["Citrus", "Pineapple", "Sea salt"],
+        "character": "The holiday one",
+        "story": "Zesty citrus and pineapple with something salty underneath. It is the only composition in the range with no oud in it at all, and it is the easiest first bottle for anyone who finds oud too much.",
+        "wear": "9+ hours",
+        "bestSeller": false
+      },
+      {
+        "slug": "billion-air",
+        "name": "Billion Air",
+        "burst": "#2FD35A",
+        "img": "assets/billion-air-01.webp",
+        "imgAlt": "Billion Air, 100 ml eau de parfum, photographed on white",
+        "notes": ["Citrus", "Aquatic", "Green", "Musk"],
+        "character": "The office one",
+        "story": "Crisp citrus and aquatic freshness over a woody-musk base, aimed squarely at nine-to-six. Safest in the collection, and the one that will get used up fastest.",
+        "wear": "9+ hours",
+        "bestSeller": false
+      },
+      {
+        "slug": "beyond-amber",
+        "name": "Beyond Amber",
+        "burst": "#D6006E",
+        "img": "assets/beyond-amber-01.webp",
+        "imgAlt": "Beyond Amber, 100 ml eau de parfum, photographed on white",
+        "notes": ["Amber", "Warm florals", "Musk"],
+        "character": "The B Collection",
+        "story": "One of three in the B Collection — Boldness, Balance, Beauty. Amber with warm florals, rounded and generous; the one in the trio that behaves best in a closed office.",
+        "wear": "9+ hours",
+        "bestSeller": false
+      },
+      {
+        "slug": "berry-bark",
+        "name": "Berry & Bark",
+        "burst": "#7A2E8E",
+        "img": "assets/berry-bark-01.webp",
+        "imgAlt": "Berry and Bark, 100 ml eau de parfum, photographed on white",
+        "notes": ["Berries", "Woods", "Warm spice"],
+        "character": "The playful one",
+        "story": "Berries over warm woods and spice — the sweetest and the most playful thing they make. The third of the B Collection, and the one that sells to people who say they do not like perfume.",
+        "wear": "9+ hours",
+        "bestSeller": false
+      }
+    ],
+
+    "rollons": [
+      { "name": "Musky Oud", "img": "assets/rollon-musky-oud.webp" },
+      { "name": "Gris Dust", "img": "assets/rollon-gris-dust.webp" },
+      { "name": "Vanilla Velvet", "img": "assets/rollon-vanilla-velvet.webp" },
+      { "name": "White Oud in Rose Garden", "img": "assets/rollon-white-oud.webp" },
+      { "name": "Hennessey Smoke", "img": "assets/rollon-hennessey-smoke.webp" },
+      { "name": "Amalfi Coast", "img": "assets/rollon-amalfi-coast.webp" },
+      { "name": "Harvest Under Winter Sun", "img": "assets/rollon-harvest.webp" }
+    ],
+
+    "products": [
+      { "name": "Musky Oud", "slug": "musky-oud", "family": ["Oud", "Warm & Spicy"], "tiers": ["100 ml", "50 ml", "Roll-on"], "price": "₹1,600", "priceEntry": "₹800", "img": "assets/musky-oud-01.webp", "imgHover": "assets/musky-oud-02.webp", "notes": "Oud · Musk · Leather · Patchouli · Amber", "tag": "Best seller" },
+      { "name": "Hennessey Smoke", "slug": "hennessey-smoke", "family": ["Warm & Spicy", "Oud"], "tiers": ["100 ml", "50 ml", "Roll-on"], "price": "₹1,600", "priceEntry": "₹800", "img": "assets/hennessey-smoke-01.webp", "imgHover": "assets/hennessey-smoke-02.webp", "notes": "Smoke · Spice · Wood · Leather", "tag": "" },
+      { "name": "White Oud in Rose Garden", "slug": "white-oud", "family": ["Oud", "Floral"], "tiers": ["100 ml", "50 ml", "Roll-on"], "price": "₹1,600", "priceEntry": "₹800", "img": "assets/white-oud-01.webp", "imgHover": "assets/white-oud-02.webp", "notes": "White oud · Rose · Resin", "tag": "" },
+      { "name": "Gris Dust", "slug": "gris-dust", "family": ["Warm & Spicy", "Floral"], "tiers": ["100 ml", "50 ml", "Roll-on"], "price": "₹1,600", "priceEntry": "₹800", "img": "assets/gris-dust-01.webp", "imgHover": "assets/gris-dust-02.webp", "notes": "Powder · Amber · Musk", "tag": "" },
+      { "name": "Vanilla Velvet", "slug": "vanilla-velvet", "family": ["Sweet & Gourmand"], "tiers": ["100 ml", "50 ml", "Roll-on"], "price": "₹1,600", "priceEntry": "₹800", "img": "assets/vanilla-velvet-01.webp", "imgHover": "assets/vanilla-velvet-02.webp", "notes": "Vanilla · Cinnamon · Cocoa", "tag": "Most gifted" },
+      { "name": "Harvest Under Winter Sun", "slug": "harvest", "family": ["Floral", "Sweet & Gourmand"], "tiers": ["100 ml", "50 ml", "Roll-on"], "price": "₹1,600", "priceEntry": "₹800", "img": "assets/harvest-01.webp", "imgHover": "assets/harvest-02.webp", "notes": "Juicy fruits · Delicate florals", "tag": "" },
+      { "name": "Amalfi Coast", "slug": "amalfi-coast", "family": ["Fresh & Aqua"], "tiers": ["100 ml", "50 ml", "Roll-on"], "price": "₹1,600", "priceEntry": "₹800", "img": "assets/amalfi-coast-01.webp", "imgHover": "assets/amalfi-coast-02.webp", "notes": "Citrus · Pineapple · Sea salt", "tag": "No oud" },
+      { "name": "Billion Air", "slug": "billion-air", "family": ["Fresh & Aqua"], "tiers": ["100 ml", "50 ml"], "price": "₹1,600", "priceEntry": "—", "img": "assets/billion-air-01.webp", "imgHover": "assets/billion-air-02.webp", "notes": "Citrus · Aquatic · Green · Musk", "tag": "" },
+      { "name": "Beyond Amber", "slug": "beyond-amber", "family": ["Floral", "Warm & Spicy"], "tiers": ["100 ml", "50 ml"], "price": "₹1,600", "priceEntry": "—", "img": "assets/beyond-amber-01.webp", "imgHover": "assets/beyond-amber-02.webp", "notes": "Amber · Warm florals · Musk", "tag": "B Collection" },
+      { "name": "Berry & Bark", "slug": "berry-bark", "family": ["Sweet & Gourmand"], "tiers": ["100 ml", "50 ml"], "price": "₹1,600", "priceEntry": "—", "img": "assets/berry-bark-01.webp", "imgHover": "assets/berry-bark-02.webp", "notes": "Berries · Woods · Warm spice", "tag": "B Collection" }
+    ],
+
+    "notes": [
+      { "name": "Oud", "tier": "Base", "burst": "#C9341B", "copy": "The resinous heart of the range. Acts as a fixative, which is the only reason a ₹1,600 bottle can hold for nine hours." },
+      { "name": "Bergamot", "tier": "Top", "burst": "#2FD35A", "copy": "The bright opening used across the fresh compositions. Gone in fifteen minutes; decides whether you keep going." },
+      { "name": "Smoke", "tier": "Heart", "burst": "#1E3CE0", "copy": "Not literal smoke — a dry, tarry woodiness that reads as warmth. The signature of Hennessey Smoke." },
+      { "name": "Vanilla", "tier": "Base", "burst": "#F2C300", "copy": "Warm and edible, tightened with cinnamon so it never collapses into dessert." },
+      { "name": "Rose", "tier": "Heart", "burst": "#FF3D7F", "copy": "Real floral weight against white oud, which is what keeps it from reading as soap." },
+      { "name": "Amber", "tier": "Base", "burst": "#D6006E", "copy": "Round, resinous sweetness that holds the powder and musk together on skin." },
+      { "name": "Sandalwood", "tier": "Base", "burst": "#8F7BFF", "copy": "Creamy wood used as the quiet floor under the oudy compositions." },
+      { "name": "Musk", "tier": "Base", "burst": "#7A2E8E", "copy": "The skin note. It is why these read 'close' rather than 'loud' after a few hours." }
+    ],
+
+    "articles": [
+      {
+        "tag": "Wear",
+        "title": "How to make a nine-hour oud actually last nine hours",
+        "excerpt": "Most people lose their fragrance in the first twenty minutes. Moisturise first, spray onto skin rather than cloth, and never rub your wrists together — the top notes do not need help disappearing.",
+        "body": [
+          "Everyone blames the perfume. Almost always it is the skin, and skin that has just come out of a shower or an air-conditioned office is dry skin, which holds nothing. Moisturise first, unscented, and let it settle for a minute before you spray.",
+          "Spray onto skin, not cloth. Fabric will hold the alcohol and release it all at once in the first hour, and then you will smell nothing for the rest of the day. Two sprays on the pulse points, one at the base of the throat, and stop. A fourth spray is how a nine-hour oud becomes a headache.",
+          "Do not rub your wrists together. It heats the oil and flattens the opening — the part the perfumer actually spent money on — into one muddled note. If you want it softer, spray further away from yourself rather than pressing it in.",
+          "Last thing: an oil roll-on under the spray roughly doubles the time it stays. That is what the ₹800 roll-ons are for, and it is the single cheapest upgrade to any of the ten."
+        ],
+        "read": "4 min",
+        "img": "assets/editorial-perfume.webp",
+        "imgAlt": "A Proust bottle photographed in low light"
+      },
+      {
+        "tag": "Layer",
+        "title": "The art of layering: roll-on under, eau de parfum over",
+        "excerpt": "The ₹800 roll-on exists for this. Oil concentrate first, wherever you want the scent to sit, then the spray over the top. The oil anchors the alcohol, the spray gives it reach.",
+        "body": [
+          "Layering has a bad reputation because most advice about it is about buying twice. It does not have to be. The cheapest, most reliable version uses what is already in the range and costs nothing extra: a roll-on under a spray of the same composition.",
+          "Oil first. Draw the roll-on across the pulse points — inner wrist, side of the neck, behind the ear if you wear your hair up. Oil concentrates are heavy and they sit close, so this is what people standing next to you will get.",
+          "Then the spray, from further away, over the same areas. Alcohol gives it the reach that the oil does not have. The oil anchors the alcohol so it releases slowly instead of all at once, and the nine hours on the label starts being true.",
+          "If you want to layer two different compositions, keep both on the same family. Musky Oud with Hennessey Smoke works because they both open on dry woods. Vanilla Velvet over Amalfi Coast does not, and no amount of technique will fix it."
+        ],
+        "read": "3 min",
+        "img": "assets/editorial-rose.webp",
+        "imgAlt": "Roll-on and eau de parfum photographed together"
+      },
+      {
+        "tag": "Price",
+        "title": "Why an Indian oud costs ₹1,600 and not ₹16,000",
+        "excerpt": "No import duty on Indian oud, no boutique rent in a European capital, no celebrity face. The bottle in front of you is the cost of the oil and the glass, and the difference is roughly a plane ticket.",
+        "body": [
+          "A ₹16,000 bottle of oud is largely paying for things that are not in the bottle: a lease on a street in Paris, a campaign shot with a face you recognise, an importing middleman, and duty. None of those are olfactory. All of them are in the price.",
+          "Proust is made in India, sold mostly in India, and does not spend on any of that. Ten compositions, all unisex, ₹800 to ₹1,600. The markup that a niche house would spend on persuasion is simply absent here — which is why the range looks cheap on a website that has no idea how to explain it.",
+          "That is the actual design problem with this brand. Not that it needs to look more expensive, but that a ₹1,600 bottle needs a page that tells you what you are buying instead of pretending it is something else. Gold on black tells you nothing. Notes, prices, and a counter on Bhavan Road tell you everything."
+        ],
+        "read": "5 min",
+        "img": "assets/editorial-house-01.webp",
+        "imgAlt": "The Proust house photographed at the perfume bar"
+      }
+    ],
+
+    "quiz": [
+      {
+        "key": "where",
+        "question": "Where will you actually wear it?",
+        "options": [
+          { "label": "Daylight, office, air conditioning", "weights": { "billion-air": 3, "amalfi-coast": 2, "harvest": 1 } },
+          { "label": "Evening, dinner, low light", "weights": { "musky-oud": 3, "hennessey-smoke": 2, "beyond-amber": 1 } },
+          { "label": "Somewhere neither of those", "weights": { "gris-dust": 3, "white-oud": 2, "berry-bark": 1 } }
+        ]
+      },
+      {
+        "key": "notice",
+        "question": "What should people notice first?",
+        "options": [
+          { "label": "That you smell clean and cold", "weights": { "amalfi-coast": 3, "billion-air": 2 } },
+          { "label": "That you smell warm and expensive", "weights": { "vanilla-velvet": 3, "beyond-amber": 2, "berry-bark": 1 } },
+          { "label": "That you smell like wood and skin", "weights": { "musky-oud": 3, "hennessey-smoke": 2, "white-oud": 1 } }
+        ]
+      },
+      {
+        "key": "presence",
+        "question": "How much room should it take up?",
+        "options": [
+          { "label": "A whisper, one step away", "weights": { "gris-dust": 3, "white-oud": 2, "harvest": 1 } },
+          { "label": "Noticeable when you move", "weights": { "billion-air": 2, "beyond-amber": 2, "amalfi-coast": 2 } },
+          { "label": "The whole lift should know", "weights": { "hennessey-smoke": 3, "musky-oud": 2, "vanilla-velvet": 1 } }
+        ]
+      }
+    ]
+  },
+
+  "sections": [
+    {
+      "id": "hero",
+      "type": "hero",
+      "kicker": "Hyderabad · unisex · made in India",
+      "title": "Perfume,",
+      "titleAccent": "printed on paper",
+      "lede": "Ten compositions built on oud, smoke and citrus, sold between ₹800 and ₹1,600. This is what they look like when you stop lighting them in gold.",
+      "primary": { "label": "Pick a composition", "href": "#machine" },
+      "secondary": { "label": "See all ten", "href": "#collection" },
+      "image": "assets/musky-oud-01.webp",
+      "imageAlt": "Musky Oud, 100 ml eau de parfum",
+      "facts": [
+        { "label": "Compositions", "value": "10" },
+        { "label": "Roll-ons", "value": "07" },
+        { "label": "Entry", "value": "₹800" },
+        { "label": "Wear", "value": "9 hrs+" }
+      ],
+      "scrollCue": "Scroll"
+    },
+    {
+      "id": "statement",
+      "type": "statement",
+      "eyebrow": "The house",
+      "headline": "A perfume bar on Bhavan Road, not a boutique on a poster.",
+      "body": "Proust makes oud-forward eau de parfum in India and sells it for less than the imported niche houses charge for a sample set. Ten compositions, all unisex, all listed at eight or nine hours. The thing that sells it is a counter where someone hands you a paper strip and asks what you already wear — so that is where this design starts: paper, ink, and a colour you did not expect.",
+      "aside": "Every composition below is priced ₹1,600 for 100 ml, ₹1,300 for 50 ml, and ₹800 for an 11 ml oil roll-on."
+    },
+    {
+      "id": "machine",
+      "type": "machine",
+      "eyebrow": "The colour machine",
+      "headline": "Ten compositions, ten colours nobody asked for.",
+      "lede": "Oud is always styled brown. Oud is not brown. Choose a composition and the paper takes its colour — click, tap, or use the arrow keys to move through them.",
+      "footnote": "Notes as published by Proust Fragrances. Colours are ours, not theirs."
+    },
+    {
+      "id": "blotter",
+      "type": "blotter",
+      "eyebrow": "Try it",
+      "headline": "Drag a blotter across the notes.",
+      "lede": "This is the only real way to shop for perfume and nobody puts it on a website. Drag the paper strip across the wells below — it picks up each note and leaves a stain on the sheet. Keyboard: tab to a note and press Enter.",
+      "resetLabel": "Fresh blotter"
+    },
+    {
+      "id": "collection",
+      "type": "collection",
+      "eyebrow": "All ten",
+      "headline": "Every composition, no mood board.",
+      "lede": "Ten eau de parfum, seven of them also in an 11 ml oil roll-on. Filter by family or by size. Every one of them is unisex — the range has no women's and no men's, so a gender filter would be a lie.",
+      "filters": {
+        "family": ["Oud", "Floral", "Fresh & Aqua", "Sweet & Gourmand", "Warm & Spicy"],
+        "tier": ["100 ml", "50 ml", "Roll-on"]
+      },
+      "rollonTitle": "The ₹800 way in",
+      "rollonCopy": "Seven of the ten come as an 11 ml oil concentrate. Same juice, no alcohol, pocket money — and the honest way to find out whether you like oud before spending ₹1,600."
+    },
+    {
+      "id": "house",
+      "type": "house",
+      "eyebrow": "What is actually behind it",
+      "headline": "French structure. Indian price. Hyderabad hands.",
+      "body": "Oud-heavy hearts rather than filler bases, a published top/heart/base for every composition instead of vague 'notes', and a roll-on entry point low enough that nobody has to gamble. The brand does not need a black website — it needs people to understand what ₹1,600 buys here.",
+      "facts": [
+        { "label": "Made in", "value": "India" },
+        { "label": "Concentration", "value": "Eau de parfum" },
+        { "label": "Range", "value": "₹800 – ₹1,600" },
+        { "label": "Wear", "value": "8–9+ hrs" },
+        { "label": "Gender", "value": "Unisex, all of it" },
+        { "label": "Where", "value": "Bhavan Road, Somajiguda" }
+      ],
+      "images": [
+        { "src": "assets/editorial-house-01.webp", "alt": "The perfume bar" },
+        { "src": "assets/editorial-house-02.webp", "alt": "Bottles on the counter" },
+        { "src": "assets/editorial-white-oud.webp", "alt": "White Oud in Rose Garden" },
+        { "src": "assets/editorial-beyond-amber.webp", "alt": "Beyond Amber" }
+      ],
+      "quote": "A room you have walked past a hundred times, remembered the moment you smell it again."
+    },
+    {
+      "id": "journal",
+      "type": "journal",
+      "eyebrow": "Journal",
+      "headline": "Three things worth knowing before you buy anything.",
+      "lede": "Written for the person who has to spend ₹800 to find out. No 'notes of mystery' anywhere."
+    },
+    {
+      "id": "capture",
+      "type": "capture",
+      "eyebrow": "Find yours",
+      "headline": "Three questions, one composition.",
+      "lede": "Answer honestly and we will narrow ten bottles down to one. Your answers are stored so the recommendation can be checked against what people actually pick.",
+      "emailLabel": "Email",
+      "emailHelp": "So the recommendation can be sent — nothing else.",
+      "nameLabel": "First name",
+      "consentLabel": "Store my answers and recommendation",
+      "submitLabel": "Show me mine",
+      "retryLabel": "Try again",
+      "resultEyebrow": "Your composition",
+      "resultCta": "Also send it to me",
+      "ledgerLink": "See what has been recorded"
+    },
+    {
+      "id": "footer",
+      "type": "footer",
+      "headline": "Ten bottles. One counter. ₹800 to find out.",
+      "newsletterLabel": "Get the journal when it is written",
+      "newsletterPlaceholder": "you@example.com",
+      "newsletterButton": "Join",
+      "columns": [
+        {
+          "heading": "The range",
+          "links": [
+            { "label": "All ten", "href": "#collection" },
+            { "label": "The colour machine", "href": "#machine" },
+            { "label": "Roll-ons", "href": "#collection" }
+          ]
+        },
+        {
+          "heading": "The house",
+          "links": [
+            { "label": "About", "href": "#house" },
+            { "label": "Journal", "href": "#journal" },
+            { "label": "Find yours", "href": "#capture" }
+          ]
+        },
+        {
+          "heading": "Elsewhere",
+          "links": [
+            { "label": "Instagram", "href": "https://www.instagram.com/proust.fragrances/" },
+            { "label": "Email", "href": "mailto:contact@proustfragrances.com" }
+          ]
+        }
+      ]
+    }
+  ]
+}
